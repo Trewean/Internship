@@ -25,7 +25,7 @@ function FindMaxArray($array){
     return $maxArray;
 }
 
-$array = FillArray(20);
+$array = FillArray(100);
 //$array = array(4, 1, 5, 11, 15, 1, 4, 6, 7, 8);
 foreach ($array as $item){
     echo $item." ";
