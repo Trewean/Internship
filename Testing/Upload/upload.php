@@ -1,5 +1,5 @@
 <?php
-if($_FILES['csv_file']['type'] != "text/csv"){
+if(!preg_match($regex, $_FILES['csv_file']['name'])){
     ?>
     <p>Неверный тип файла, выберите заново</p>
     <a href = "CSV_upload.php" ><button>Вернуться к форме</button></a>
